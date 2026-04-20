@@ -1,5 +1,5 @@
 /*----------------------------------------------------------------------------
-    Reset
+    Générique
 ----------------------------------------------------------------------------*/
 
 html {
@@ -12,23 +12,10 @@ html {
     box-sizing: inherit;
 }
 
-/*------------------------------------------------------------------------------
-   Base
-------------------------------------------------------------------------------*/
-
 body {
     font: normal 1.125rem/160% "Roboto", sans-serif;
     font-optical-sizing: auto;
     color: #0A0908
-}
-
-/*------------------------------------------------------------------------------
-   Mise en page
-------------------------------------------------------------------------------*/
-
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 /*------------------------------------------------------------------------------
@@ -67,6 +54,21 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: #E25254;
+}
+
+/*------------------------------------------------------------------------------
+   Components
+------------------------------------------------------------------------------*/
+
+/*-- Général --*/
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .bouton{
     font: bold 1.125rem/100% "Jost", sans-serif;
     font-optical-sizing: auto;
@@ -78,16 +80,32 @@ a{
     cursor: pointer;
 }
 
-/*------------------------------------------------------------------------------
-   Components
-------------------------------------------------------------------------------*/
-
 /*-- Header --*/
 
 .header{
     border-top: #E25254 4px solid;
+    margin: 0;
+    padding: 14px 0;
+}
+
+.header .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header .logo{
-    
+    font: bold 2.625rem/100% "Jost", sans-serif;
+    font-optical-sizing: auto;
+    color: #0A0908;
+}
+
+.header ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
 }
