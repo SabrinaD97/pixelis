@@ -42,7 +42,7 @@ h3{
     font-optical-sizing: auto;
     color: #E25254;
     text-transform: uppercase;
-    
+
     margin: 0;
     padding-bottom: 30px;
 }
@@ -221,10 +221,32 @@ a:hover{
 .conseils .conteneur-cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 25px;
 }
 
 .conseils .card{
     display: flex;
+    align-items: flex-start;
     gap: 20px;
     background: #F2F4F3;
+    padding: 20px;
+    height: 288px;
+}
+
+.conseils .card span{
+    font-size: 2.25rem;
+    color: #E25254;
+}
+
+.conseils .texte{
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+}
+
+.conseils .texte .bouton{
+    align-self: flex-end;
+    margin-top: auto;
+
+    background: #E25254;
 }
