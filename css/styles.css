@@ -34,6 +34,7 @@ h2{
     font-optical-sizing: auto;
     color: #0A0908;
     margin: 0;
+    padding-bottom: 10px;
 }
 
 h3{
@@ -41,6 +42,7 @@ h3{
     font-optical-sizing: auto;
     color: #E25254;
     margin: 0;
+    padding-bottom: 30px;
 }
 
 p{
@@ -80,12 +82,23 @@ a:hover{
     cursor: pointer;
 }
 
+.box{
+    max-width: 588px;
+    padding-bottom: 40px;
+}
+
 /*-- Header --*/
 
 .header{
+    background: #F2F4F3;
     border-top: #E25254 4px solid;
     margin: 0;
     padding: 14px 0;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .header .nav{
@@ -124,6 +137,7 @@ a:hover{
 .hero{
     background: url(../images/hero.jpg) no-repeat center/cover;
     min-height: 650px;
+    margin-top: 74px;
 }
 
 .hero .wrapper{
@@ -134,7 +148,7 @@ a:hover{
 }
 
 .hero .boite{
-    background-color: rgb(226, 82, 84, 0.9);
+    background: rgb(226, 82, 84, 0.9);
     max-width: 50%;
     padding: 40px;
     display: flex;
@@ -149,4 +163,35 @@ a:hover{
 .hero .bouton{
     align-self: flex-end;
     background-color: #C0392B;
+}
+
+/*-- Services --*/
+
+.services{
+    background: #D6D6D6;
+    padding: 80px 0;
+}
+
+.services .conteneur-cartes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+.services .carte{
+    background: #F2F4F3;
+    padding: 20px;
+}
+
+.services .carte:hover{
+    background: #E25254;
+    color: #F2F4F3;
+}
+
+.services .carte:hover h3{
+    color: #F2F4F3;
+}
+
+.services .carte h3{
+    display: flex;
+    gap: 15px;
 }
