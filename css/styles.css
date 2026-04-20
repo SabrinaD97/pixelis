@@ -244,7 +244,12 @@ a:hover{
     padding-top: 8px;
 }
 
-.conseils .texte .bouton{
+.conseils .bloc{
+    display: flex;
+    flex-direction: column;
+}
+
+.conseils .bloc .bouton{
     align-self: flex-end;
     margin-top: auto;
 
@@ -263,4 +268,25 @@ a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/*------------------------------------------------------------------------------
+   Aide stylistique
+------------------------------------------------------------------------------*/
+
+.modale{
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2000;
+
+    background: rgb(10, 9, 8, 0.7);
+}
+
+.fenetre{
+    font: 900 18.75rem/100% "Jost", sans-serif;
+    font-optical-sizing: auto;
+    color: #E25254;
 }
