@@ -250,3 +250,17 @@ a:hover{
 
     background: #E25254;
 }
+
+/*-- Footer --*/
+
+.footer{
+    background: #E25254;
+    color: #F2F4F3;
+    padding: 17px 0;
+}
+
+.footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
