@@ -98,6 +98,15 @@ a:hover{
     font: bold 2.625rem/100% "Jost", sans-serif;
     font-optical-sizing: auto;
     color: #0A0908;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .logo span{
+    font-size: 2.265rem;
+    line-height: 100%;
 }
 
 .header ul{
@@ -108,4 +117,36 @@ a:hover{
     gap: 30px;
     padding: 0;
     margin: 0;
+}
+
+/*-- Hero --*/
+
+.hero{
+    background: url(../images/hero.jpg) no-repeat center/cover;
+    min-height: 650px;
+}
+
+.hero .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 650px;
+}
+
+.hero .boite{
+    background-color: rgb(226, 82, 84, 0.9);
+    max-width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero p{
+    color: #F2F4F3;
+}
+
+.hero .bouton{
+    align-self: flex-end;
+    background-color: #C0392B;
 }
