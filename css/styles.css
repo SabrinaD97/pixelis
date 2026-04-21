@@ -247,12 +247,12 @@ a:hover{
 .conseils .bloc{
     display: flex;
     flex-direction: column;
+    min-height: 248px;
 }
 
 .conseils .bloc .bouton{
     align-self: flex-end;
     margin-top: auto;
-
     background: #E25254;
 }
 
@@ -281,6 +281,8 @@ a:hover{
     width: 100%;
     height: 100vh;
     z-index: 2000;
+    justify-content: center;
+    align-items: center;
 
     background: rgb(10, 9, 8, 0.7);
 }
@@ -288,5 +290,10 @@ a:hover{
 .fenetre{
     font: 900 18.75rem/100% "Jost", sans-serif;
     font-optical-sizing: auto;
+    text-transform: uppercase;
     color: #E25254;
+}
+
+.modale.visible{
+    display: flex;
 }
